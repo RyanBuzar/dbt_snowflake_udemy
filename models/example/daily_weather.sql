@@ -1,6 +1,6 @@
 WITH daily_weather AS (
     SELECT
-        DATE(time) AS daily_weather,
+        DATE(dateadd(YEAR,4,TO_TIMESTAMP(time))) AS daily_weather,
         weather,
         temp,
         pressure,
