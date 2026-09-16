@@ -10,7 +10,6 @@ with CTE as (
     where 
         STARTED_AT != 'started_at'
 )
-
 SELECT 
 * 
 FROM CTE;
